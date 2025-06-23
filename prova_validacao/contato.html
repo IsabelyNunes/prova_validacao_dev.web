@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/style.css"
+      media="screen"
+    />
+
+    <title>Início</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navcor">
+        <strong
+          ><a class="navbar-brand nav-text ms-5" href="index.html"
+            >GreenPlanet</a
+          ></strong
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarCollapse"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="index.html">Início</a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link nav-text beige" href="produtos.html"
+                >Produtos</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="contatos.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <h2 class="text-center tituloP">Fale Conosco</h2>
+
+    <form class="row g-3 col-10 col-sm-8 m-auto mb-5 border p-4 formColor">
+      <div class="col-md-6">
+        <label for="inputEmail" class="form-label text-white">Nome</label>
+        <input type="email" class="form-control" id="inputEmail" required />
+        <span id="emailError" class="error-message"></span>
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputTelefone" class="form-label text-white">E-mail</label>
+        <input type="tel" class="form-control" id="inputTelefone" required />
+        <span id="foneError" class="error-message"></span>
+      </div>
+
+      <div class="col-12">
+        <label for="inputMensagem" class="form-label text-white"
+          >Mensagem</label
+        >
+        <textarea
+          class="form-control"
+          id="inputMensagem"
+          rows="5"
+          required
+        ></textarea>
+        <span id="messageError" class="error-message"></span>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="telefone" class="form-label text-white">Telefone</label>
+          <input type="tel" class="form-control" id="telefone" />
+        </div>
+        <div class="col-md-3">
+          <label for="telefone" class="form-label text-white"
+            >Número do Cliente</label
+          >
+          <input type="tel" class="form-control" id="telefone" />
+        </div>
+        <div class="col-md-3">
+          <label for="nascimento" class="form-label text-white"
+            >Data de Nascimento</label
+          >
+          <input type="date" class="form-control" id="nascimento" />
+        </div>
+      </div>
+
+      <div class="d-flex flex-column">
+        <p class="mb-2 text-white">Gênero:</p>
+
+        <div class="form-check mb-1">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="radioMasculino"
+          />
+          <label class="form-check-label text-white" for="radioMasculino">
+            Masculino
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="radioFeminino"
+          />
+          <label class="form-check-label text-white" for="radioFeminino">
+            Feminino
+          </label>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="aceitarTermos" />
+          <label class="form-check-label text-white" for="aceitarTermos">
+            Aceito os <a href="#" class="text-reset">termos de uso</a>
+          </label>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="termosModal"
+        tabindex="-1"
+        aria-labelledby="termosModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="termosModalLabel">Termos de Uso</h5>
+              <button
+                type="button"
+                class="btn-close btnCorF"
+                data-bs-dismiss="modal"
+                aria-label="Fechar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Ao utilizar nossos serviços você concorda com os seguintes termos:
+              <ul>
+                <li>
+                  Seus dados serão utilizados exclusivamente para fins de
+                  contato e atendimento
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  Você é responsável pelas informações fornecidas neste
+                  formulário
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  Não compartilhamos seus dados com terceiros sem seu
+                  consentimento
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  Você pode solicitar a exclusão dos seus dados a qualquer
+                  momento
+                </li>
+              </ul>
+              Para mais informações entre em contato com a nossa equipe.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btnCorF" data-bs-dismiss="modal">
+                Fechar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script>
+        let checkbox = document.getElementById("aceitarTermos");
+
+        let modal = document.getElementById("termosModal");
+
+        let mostrarModal = new bootstrap.Modal(modal);
+
+        checkbox.addEventListener("change", function () {
+          if (checkbox.checked) {
+            mostrarModal.show();
+          }
+        });
+      </script>
+
+      <div class="col-12">
+        <button type="button" onclick="validarForm()" class="btn btnCorF">
+          Enviar
+        </button>
+      </div>
+    </form>
+
+    <footer class="footerCor py-4 mt-5">
+      <div class="container">
+        <p class="mb-1 footerText text-center">
+          2025 GreenPlanet - Todos os direitos reservados.
+        </p>
+        <p class="mb-1 text-center">
+          <a href="#" class="text-decoration-none footerText"
+            >Desenvolvido por Isabely.</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

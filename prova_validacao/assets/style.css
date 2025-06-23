@@ -1,0 +1,44 @@
+.titulo{
+    margin-top: 7%;
+}
+.subtitulo{
+    font-size: xx-large;
+}
+.img1{
+    width: 50%;
+    height: 50%;
+
+}
+.tituloP{
+    margin-top: 7%;
+}
+.formColor{
+    background-color:rgba(49, 48, 48, 0.656)
+}
+.navcor{
+    background-color: #143c34;
+}
+.nav-text{
+    color:#c2faa3;
+}
+.footerCor{
+    background-color: #143c34;
+}
+.footerText{
+    color:#c2faa3;
+}
+.btnCor{
+    background-color: #143c34;
+}
+.btnCorF{
+    background-color: #c2faa3;
+}
+.formColor{
+    background-color: #143c34;
+}
+h1{
+    color: #143c34;
+}
+h5{
+    color: #2b8270;
+}

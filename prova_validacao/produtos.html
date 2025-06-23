@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/style.css"
+      media="screen"
+    />
+
+    <title>Início</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navcor">
+        <strong
+          ><a class="navbar-brand nav-text ms-5" href="index.html"
+            >GreenPlanet</a
+          ></strong
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarCollapse"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="index.html">Início</a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link nav-text beige" href="produtos.html"
+                >Produtos</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <h2 class="text-center tituloP">Nossos Produtos</h2>
+
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/caneca.jpeg" class="card-img-top" />
+            <div class="card-body">
+              <h5>Caneca Ecológica</h5>
+              <p>Feitas com fios naturais de bambu e biodegradantes</p>
+              <strong class="card-text">R$ 29,90</strong>
+            </div>
+            <div class="d-grid gap-2 col-10 mx-auto mb-2">
+              <button class="btn btnCor text-white">Comprar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/kit1.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5>Kit Sustentável</h5>
+              <p>Inclui copo reutilizável, talheres de bambu e ecobag</p>
+              <strong>R$ 59,90</strong>
+            </div>
+            <div class="d-grid gap-2 col-10 mx-auto mb-2">
+              <button class="btn btnCor text-white">Comprar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/sabonete.jpg" />
+            <div class="card-body">
+              <h5>Sabonete Natural</h5>
+              <p>Produzido com ingredientes orgânicos e óleos essenciais</p>
+              <strong>R$ 14,90</strong>
+            </div>
+            <div class="d-grid gap-2 col-10 mx-auto mb-2">
+              <button class="btn btnCor text-white">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footerCor text-center py-4 mt-5">
+      <div class="container">
+        <p class="mb-1 footerText">
+          2025 GreenPlanet - Todos os direitos reservados.
+        </p>
+        <p class="mb-1">
+          <a href="#" class="text-decoration-none footerText"
+            >Desenvolvido por Isabely.</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
